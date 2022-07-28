@@ -20,10 +20,12 @@ function Navbar() {
                 </div>
             </nav>
             <div class="navbarPC">
-                <h2><Link to="/">Accueil</Link></h2>
-                <h2><Link to="/Moi">A propos</Link></h2>
+                <div className="navbarPC-items">
+                    <p>D.E_view</p>
+                    <h2><Link to="/">Accueil</Link></h2>
+                    <h2><Link to="/Châteaux">Châteaux</Link></h2>
+                </div>
             </div>
-
         </div>
     );
 }

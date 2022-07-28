@@ -1,4 +1,7 @@
 body {
+  background-image: url("../public/logo192.png");
+  background-repeat: repeat;
+  max-width: 100%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -7,6 +10,32 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+img {
+  background-repeat: repeat;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration-line: underline;
+}
+
 .navigation {
   display: none;
+}
+
+.navbarPC {
+  background-color: black;
+}
+
+.navbarPC-items {
+  color: white;
+  margin: auto;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  justify-content: space-between;
 }
