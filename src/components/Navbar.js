@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
     const [isNavExpanded, setIsNavExpanded] = useState(false)
+    const [isCastleExpanded, setIsCastleExpanded] = useState(false)
+
 
     return (
         <div class="menuStyle">
@@ -23,7 +25,12 @@ function Navbar() {
                 <div className="navbarPC-items">
                     <p>D.E_view</p>
                     <h2><Link to="/">Accueil</Link></h2>
-                    <h2><Link to="/Châteaux">Châteaux</Link></h2>
+                    <div className="castle" onMouseEnter={() => { setIsCastleExpanded(!isCastleExpanded) }} onMouseLeave={() => { setIsCastleExpanded(!isCastleExpanded) }}>
+                        <h2><Link to="/Châteaux" className="castleLink">Châteaux</Link></h2>
+                        <div className={isCastleExpanded ? "castle-list expanded" : "castle-list"}>
+                            <h2><Link to="/Châteaux">Langeais</Link></h2>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

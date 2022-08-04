@@ -1,6 +1,4 @@
 body {
-  background-image: url("../public/logo192.png");
-  background-repeat: repeat;
   max-width: 100%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -38,4 +36,16 @@ a:hover {
   margin-right: 2rem;
   display: flex;
   justify-content: space-between;
+}
+
+.castleLink {
+  padding: 20px;
+}
+
+.castle-list {
+  display: none;
+}
+
+.castle-list.expanded {
+  display: block;
 }
